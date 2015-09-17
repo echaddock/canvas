@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		A1FC09CC1BAB4B9A0007CFDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC09CB1BAB4B9A0007CFDD /* main.m */; };
 		A1FC09CF1BAB4B9A0007CFDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC09CE1BAB4B9A0007CFDD /* AppDelegate.m */; };
-		A1FC09D21BAB4B9A0007CFDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC09D11BAB4B9A0007CFDD /* ViewController.m */; };
 		A1FC09D51BAB4B9A0007CFDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FC09D31BAB4B9A0007CFDD /* Main.storyboard */; };
 		A1FC09D71BAB4B9A0007CFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FC09D61BAB4B9A0007CFDD /* Assets.xcassets */; };
 		A1FC09DA1BAB4B9A0007CFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FC09D81BAB4B9A0007CFDD /* LaunchScreen.storyboard */; };
 		A1FC09E51BAB4B9B0007CFDD /* CanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC09E41BAB4B9B0007CFDD /* CanvasTests.m */; };
 		A1FC09F01BAB4B9B0007CFDD /* CanvasUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC09EF1BAB4B9B0007CFDD /* CanvasUITests.m */; };
+		A1FC09FF1BAB4D3A0007CFDD /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC09FE1BAB4D3A0007CFDD /* CanvasViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A1FC0A051BAB511D0007CFDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC0A041BAB511D0007CFDD /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		A1FC09CB1BAB4B9A0007CFDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1FC09CD1BAB4B9A0007CFDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1FC09CE1BAB4B9A0007CFDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1FC09D01BAB4B9A0007CFDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1FC09D11BAB4B9A0007CFDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A1FC09D41BAB4B9A0007CFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1FC09D61BAB4B9A0007CFDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1FC09D91BAB4B9A0007CFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		A1FC09EB1BAB4B9B0007CFDD /* CanvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FC09EF1BAB4B9B0007CFDD /* CanvasUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasUITests.m; sourceTree = "<group>"; };
 		A1FC09F11BAB4B9B0007CFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FC09FD1BAB4D3A0007CFDD /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		A1FC09FE1BAB4D3A0007CFDD /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		A1FC0A031BAB511D0007CFDD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1FC0A041BAB511D0007CFDD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,17 @@
 		A1FC09C91BAB4B9A0007CFDD /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
+				A1FC09FD1BAB4D3A0007CFDD /* CanvasViewController.h */,
+				A1FC09FE1BAB4D3A0007CFDD /* CanvasViewController.m */,
 				A1FC09CD1BAB4B9A0007CFDD /* AppDelegate.h */,
 				A1FC09CE1BAB4B9A0007CFDD /* AppDelegate.m */,
-				A1FC09D01BAB4B9A0007CFDD /* ViewController.h */,
-				A1FC09D11BAB4B9A0007CFDD /* ViewController.m */,
 				A1FC09D31BAB4B9A0007CFDD /* Main.storyboard */,
 				A1FC09D61BAB4B9A0007CFDD /* Assets.xcassets */,
 				A1FC09D81BAB4B9A0007CFDD /* LaunchScreen.storyboard */,
 				A1FC09DB1BAB4B9A0007CFDD /* Info.plist */,
 				A1FC09CA1BAB4B9A0007CFDD /* Supporting Files */,
+				A1FC0A031BAB511D0007CFDD /* ViewController.h */,
+				A1FC0A041BAB511D0007CFDD /* ViewController.m */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -270,8 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1FC09D21BAB4B9A0007CFDD /* ViewController.m in Sources */,
+				A1FC09FF1BAB4D3A0007CFDD /* CanvasViewController.m in Sources */,
 				A1FC09CF1BAB4B9A0007CFDD /* AppDelegate.m in Sources */,
+				A1FC0A051BAB511D0007CFDD /* ViewController.m in Sources */,
 				A1FC09CC1BAB4B9A0007CFDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
